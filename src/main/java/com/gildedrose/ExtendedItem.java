@@ -14,6 +14,6 @@ public class ExtendedItem extends Item {
 
     @Override
     public String toString() {
-        return (super.toString() + ", " + this.category)
+        return (super.toString() + ", " + this.category);
     }
 }

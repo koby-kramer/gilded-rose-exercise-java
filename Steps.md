@@ -8,5 +8,10 @@ My initial thoughts are that this is spahgetti code and easily doesn't follow SO
 3. Extend the Item class to hold category for increased readability.
     - It seems that a category is the best way to handle this verses trying to implement a class for each item because they may or may not have special rules logic. Each of these special logics can be added to an extended but makes for much more code to manage.
 4. Add addItem function to GildedRose. 
-5. Refactor the Update Quantity to make more ledgeable and convert to Hashmap for easier lookups.
-6. 
+5. Convert Items to hashmap and put with addItems method. 
+6. Refactor the Update Quantity to make more ledgeable.
+7. 
+
+
+### Notes on Logical Excenption:
+There are a few logical exceptions that have arisen from this such as items having a sellIn greater than quality causing the item to be worthless prior to the sellIn date, AgedBrie having a sellIn less that 0 but does it increase in quality twice as fast, and ConjuredItems with sellIn less than 0 being degraded at four times (degrade twice as fast normally and then sellIn twice as fast).

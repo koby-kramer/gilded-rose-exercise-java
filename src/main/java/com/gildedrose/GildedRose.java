@@ -1,17 +1,21 @@
 package com.gildedrose;
 
+import java.util.HashMap;
+
 class GildedRose {
-    ExtendedItem[] items;
+    HashMap<String, ExtendedItem> items = new HashMap<String, ExtendedItem>();
 
     public GildedRose() {
-        this.items = new ExtendedItem[] { //
-                new ExtendedItem("+5 Dexterity Vest", 10, 20, "Normal"), //
-                new ExtendedItem("Aged Brie", 2, 0, "Cheese"), //
-                new ExtendedItem("Elixir of the Mongoose", 5, 7, ""), //
-                new ExtendedItem("Sulfuras, Hand of Ragnaros", 0, 80, "Legendary"), //
-                new ExtendedItem("Backstage passes to a TAFKAL80ETC concert", 15, 20, "Inflation"), //
-                new ExtendedItem("Conjured Mana Cake", 3, 6, "Conjured") //
-        };
+            this.addItem(new ExtendedItem("+5 Dexterity Vest", 10, 20, "Normal"));
+            this.addItem(new ExtendedItem("Aged Brie", 2, 0, "Cheese"));
+            this.addItem(new ExtendedItem("Elixir of the Mongoose", 5, 7, "Regular"));
+            this.addItem(new ExtendedItem("Sulfuras, Hand of Ragnaros", 0, 80, "Legendary"));
+            this.addItem(new ExtendedItem("Backstage passes to a TAFKAL80ETC concert", 15, 20, "Inflation"));
+            this.addItem(new ExtendedItem("Conjured Mana Cake", 3, 6, "Conjured"));
+    }
+
+    public void addItem(ExtendedItem item) {
+        this.items.put(item.name, item);
     }
 
     public void updateQuality() {

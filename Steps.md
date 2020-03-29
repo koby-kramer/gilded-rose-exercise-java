@@ -5,6 +5,6 @@ My initial thoughts are that this is spahgetti code and easily doesn't follow SO
 ## Steps
 1. Understand the business logic that we're trying to replicate.
 2. Add more units test to ensure we don't break said business logic.
-3. Extend the Item class to hold category for special logic. 
+3. Extend the Item class to hold category for increased readability.
 4. Refactor the Update Quantity to make more ledgeable and convert to Hashmap for easier lookups.
 5. 

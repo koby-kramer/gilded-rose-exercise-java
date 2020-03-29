@@ -3,7 +3,7 @@ package com.gildedrose;
 public class ExtendedItem extends Item {
     /**
      * Extended item class to encompass Item Category for easier business logic.
-     * Item Categories: Legendary Item, Conjured Item, Regular Item, Infaltion Item
+     * Item Categories: Legendary Item, Conjured Item, Normal Item, Infaltion Item
      */
     public String category;
 

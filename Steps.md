@@ -6,5 +6,7 @@ My initial thoughts are that this is spahgetti code and easily doesn't follow SO
 1. Understand the business logic that we're trying to replicate.
 2. Add more units test to ensure we don't break said business logic.
 3. Extend the Item class to hold category for increased readability.
-4. Refactor the Update Quantity to make more ledgeable and convert to Hashmap for easier lookups.
-5. 
+    - It seems that a category is the best way to handle this verses trying to implement a class for each item because they may or may not have special rules logic. Each of these special logics can be added to an extended but makes for much more code to manage.
+4. Add addItem function to GildedRose. 
+5. Refactor the Update Quantity to make more ledgeable and convert to Hashmap for easier lookups.
+6. 

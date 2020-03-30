@@ -10,7 +10,9 @@ My initial thoughts are that this is spahgetti code and easily doesn't follow SO
 4. Add addItem function to GildedRose. 
 5. Convert Items to hashmap and put with addItems method. 
 6. Refactor the Update Quantity to make more ledgeable.
-7. 
+7. add updateInventory method.
+8. Update unit tests to call new methods.
+9. Add unit test to test new features for Conjured items are working as intended.
 
 
 ### Notes on Logical Excenption:
